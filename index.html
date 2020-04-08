@@ -1,0 +1,71 @@
+
+<!DOCTYPE html> 
+  <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+
+   </head>
+  
+<body>
+        <header>
+          <a href="/">
+           <img src="logoimc.png" alt="Imagem da Logomarca"> 
+           </a>
+        </header>
+
+        <Main>
+
+          <p>
+           IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de 
+           Saúde para calcular o peso ideal de cada pessoa. 
+          </p>
+          <p>
+            O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. 
+            Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9
+          </p>
+          <p>
+            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela.
+            Importante: siga os exemplos e use pontos como separadores.
+          </p>
+       </Main>
+
+       <form action="/pagina-processa-dados-do-form" method="post">
+
+        <select name="select">
+          <option value="valor1">Mulher</option> 
+          <option value="valor2" selected>Homem</option>
+        </select>
+        
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" />
+        </div>
+          <div>
+            <label for="idade">Idade:</label>
+            <input type="numero" id="idade" />
+          </div>
+          <div>
+            <label for="Peso">Peso:</label>
+            <input type="numero" id="peso" />
+          </div>
+          <div>
+            <label for="Altura">Altura</label>
+            <input type="numero" id="altura" />
+          </div> 
+          <div class="button">
+            <button type="button" onclick="calcularimc()">calcular</button>
+          </div>
+          <div>
+            <h1 id="resultado">
+              
+            </h1>
+          </div>
+
+        </form>
+    
+       <script src="index.js"></script>
+
+
+</body>
+</html>
