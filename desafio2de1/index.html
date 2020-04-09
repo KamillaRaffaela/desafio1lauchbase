@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+  <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+
+   </head>
+  
+<body>
+        <header>
+          <a href="/">
+           <img src="coragemococovarde.jpg" alt="Imagem da Logomarca"> 
+           </a>
+        </header>
+
+        <Main>
+
+            <h1>Simulação de Cálculo</h1>
+
+          <p>
+            Também conhecida como ‘Calculadora de Aposentadoria ’, a ferramenta realiza uma busca automática informações e
+            dados de vínculos do segurado registrados nos sistemas do INSS para calcular o tempo de contribuição, ou seja
+            quanto tempo falta para o segurado se aposentar. 
+            Caso algum vínculo porventura não conste nos registros previdenciários, não há a opção de incluir manualmente para fazer a simulação.
+          </p>
+         
+       <form action="/pagina-processa-dados-do-form" method="post">
+
+        <select name="sexo" id="sexo">
+          <option value="M">Mulher</option> 
+          <option value="H" selected>Homem</option>
+        </select>
+        
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome"  value="" />
+        </div>
+          <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" value="" />
+          </div>
+          <div>
+            <label for="contribução">Contribução:</label>
+            <input type="number" id="contribuição"  value="" />
+          </div>
+        
+          <div class="button">
+            <button type="button" onclick="calcularaps()">calcular</button>
+          </div>
+          <div>
+            <h1 id="resultado">
+              
+            </h1>
+          </div>
+
+        </form>
+    
+       <script src="index.js"></script>
+
+
+</body>
+</html>
